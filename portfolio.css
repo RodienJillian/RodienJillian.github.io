@@ -1,0 +1,304 @@
+body, html {
+  font-family: Candara, sans-serif;
+  color: #fbbf24;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container to hold content and footer */
+.container {
+  flex: 1;
+}
+
+header {
+  padding: 14px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #040D1E;
+  color: #fbbf24;
+  padding:25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 1000; 
+}
+
+ul {
+  list-style: none; /* Removes default list bullets */
+  margin: 10;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+  margin-left: 20px; /* Adds space between menu items */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin: 0 45px;
+}
+
+nav ul li a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+/* Footer styling */
+footer {
+  background-color: #102934bd;
+  color: #fbbf24;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Pushes the footer to the bottom of the page */
+  width: 100%;
+}
+
+.bgimage {
+  background-repeat:no-repeat; 
+  background-size:cover; 
+  background-attachment:fixed; 
+  margin-top:25px;
+}
+
+.content {
+  width: 50%;
+  text-align: left;
+  margin:10px
+}
+
+.content-container {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start; /* Aligns the columns at the top */
+  margin-bottom: 20px;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.selfphoto {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10rem;
+}
+.text {
+  font-family: Candara, sans-serif; 
+  color: #fbbf24;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.description {
+  font-family: Candara, sans-serif; 
+  color: #fbbf24;
+  padding: 0; /* Reset padding */
+  max-width: 800px; /* Optional: limits width of the paragraph */
+  line-height: 1.5; /* Optional: improves readability */
+  margin: 20px auto 0 auto; /* Space above the paragraph */
+}
+
+.cover {
+  width: 400px; 
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+/* Project Grid Styles */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Project Item Styles */
+.project-item {
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.project-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 15%;
+}
+
+.project-name {
+  font-family: Candara, sans-serif; 
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fbbf24;
+}
+
+/* For each project */
+
+.back-button{
+  position: absolute; /* Position the button relative to the viewport */
+  top: 0; /* Align it at the very top */
+  left: 0; /* Align it at the very left */
+  z-index: 1000; /* Ensure it stays above other elements */
+  font-family: Candara, sans-serif; 
+  padding: 10px 20px; /* Add padding for the button */
+  font-size: 16px; /* Increase font size */
+  color: #fbbf24;
+  font-weight: bold;
+  padding:25px;
+  letter-spacing: 3px;
+  background: none;
+  text-decoration: none;
+}
+
+.project-title {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.imgdisplay {
+  max-width: 800px;
+  /*max-width: 100%;  Ensures the image scales within the viewport */
+  /*max-height: 100%; /* Ensures the image scales within the viewport */
+  width: auto; /* Maintain the aspect ratio */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  align-self : center;
+  margin: 30px auto;
+}
+
+
+
+
+/* Profile Section Styles */
+.about {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  align-content : right;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fbbf24;
+  align-items: left;
+}
+
+.degree {
+  font-size: 1.25rem;
+  color: #fbbf24;
+  margin-bottom: 1.5rem;
+  align-items: left;
+}
+
+.paragraph-container {
+  display: flex;
+  text-align: left; /* Justifies the paragraph text */
+  margin-right: 100px;
+  margin-left: 100px; /* Adjust this value to increase or decrease space */
+  line-height: 1.5; /* Optional: Controls the line spacing within the paragraph */
+  font-family: Candara, sans-serif; 
+  color: #fbbf24;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
