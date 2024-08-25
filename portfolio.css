@@ -1,7 +1,7 @@
 body, html {
   font-family: Candara, sans-serif;
   color: #fbbf24;
-  height: 100%;
+  height:100%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,6 @@ header {
   padding: 14px 50px;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   background-color: #040D1E;
   color: #fbbf24;
@@ -27,7 +26,7 @@ header {
 }
 
 ul {
-  list-style: none; /* Removes default list bullets */
+  list-style: none;
   margin: 10;
   padding: 0;
   display: flex;
@@ -35,7 +34,11 @@ ul {
 
 li {
   margin-right: 20px;
-  margin-left: 20px; /* Adds space between menu items */
+  margin-left: 20px;
+}
+
+li a:hover {
+  color:#6d480b;
 }
 
 nav ul {
@@ -56,7 +59,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 
 /* Footer styling */
@@ -65,7 +68,7 @@ footer {
   color: #fbbf24;
   text-align: center;
   padding: 15px;
-  margin-top: auto; /* Pushes the footer to the bottom of the page */
+  margin-top: auto;
   width: 100%;
 }
 
@@ -85,7 +88,7 @@ footer {
 .content-container {
   display: flex;
   grid-template-columns: 1fr 1fr;
-  align-items: flex-start; /* Aligns the columns at the top */
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
@@ -110,20 +113,19 @@ footer {
   margin-bottom: 20px;
   margin-top: 10rem;
 }
-.text {
+
+.text, .description {
   font-family: Candara, sans-serif; 
   color: #fbbf24;
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
+  margin: 0;
+  padding: 0;
 }
 
 .description {
-  font-family: Candara, sans-serif; 
-  color: #fbbf24;
-  padding: 0; /* Reset padding */
-  max-width: 800px; /* Optional: limits width of the paragraph */
-  line-height: 1.5; /* Optional: improves readability */
-  margin: 20px auto 0 auto; /* Space above the paragraph */
+  padding: 0;
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 20px auto 0 auto;
 }
 
 .cover {
@@ -140,12 +142,16 @@ footer {
   margin-bottom: 15px;
 }
 
+.social-icons a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
 .social-icons a img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
-
 
 /* Project Grid Styles */
 .project-grid {
@@ -153,6 +159,11 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+.project-grid a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 /* Project Item Styles */
@@ -180,15 +191,14 @@ footer {
 }
 
 /* For each project */
-
-.back-button{
-  position: absolute; /* Position the button relative to the viewport */
-  top: 0; /* Align it at the very top */
-  left: 0; /* Align it at the very left */
-  z-index: 1000; /* Ensure it stays above other elements */
+.back-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   font-family: Candara, sans-serif; 
-  padding: 10px 20px; /* Add padding for the button */
-  font-size: 16px; /* Increase font size */
+  padding: 10px 20px;
+  font-size: 16px;
   color: #fbbf24;
   font-weight: bold;
   padding:25px;
@@ -196,6 +206,11 @@ footer {
   background: none;
   text-decoration: none;
 }
+
+.back-button a:hover {
+  color:#6d480b;
+}
+
 
 .project-title {
   max-width: 800px;
@@ -205,17 +220,12 @@ footer {
 
 .imgdisplay {
   max-width: 800px;
-  /*max-width: 100%;  Ensures the image scales within the viewport */
-  /*max-height: 100%; /* Ensures the image scales within the viewport */
-  width: auto; /* Maintain the aspect ratio */
-  height: auto; /* Maintain the aspect ratio */
+  width: auto;
+  height: auto;
   display: block;
   align-self : center;
   margin: 30px auto;
 }
-
-
-
 
 /* Profile Section Styles */
 .about {
@@ -258,10 +268,10 @@ footer {
 
 .paragraph-container {
   display: flex;
-  text-align: left; /* Justifies the paragraph text */
+  text-align: left;
   margin-right: 100px;
-  margin-left: 100px; /* Adjust this value to increase or decrease space */
-  line-height: 1.5; /* Optional: Controls the line spacing within the paragraph */
+  margin-left: 100px;
+  line-height: 1.5;
   font-family: Candara, sans-serif; 
   color: #fbbf24;
 }
@@ -270,6 +280,7 @@ footer {
 .contact-section {
   text-align: center;
   padding: 50px;
+  margin-bottom: 10rem;
 }
 
 .contact-section h1 {
@@ -301,4 +312,381 @@ footer {
   width: 40px;
   height: 40px;
   object-fit: contain;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 510px) {
+
+  
+  header {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 14px 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center; /* Centers the navigation container */
+    width: 100%; /* Ensures nav takes full width */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row; /* Keeps menu items in a row */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    justify-content: center; /* Centers items horizontally */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes default list bullets */
+    
+  }
+
+  li {
+    font-size: small; /* Reduces font size for smaller screens */
+    margin: 0 5px; /* Adds horizontal spacing between items */
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer is pushed down on mobile */
+    z-index: 0;
+  }
+  main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .column {
+    flex-direction: column-reverse ;
+  }
+
+  .content {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .cover {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 3rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .right-column {
+    padding-left: 0;
+  }
+
+  .title {
+    margin-top: 0rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  .paragraph-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .contact-section {
+    margin-bottom: 30rem;
+    padding: 50px;
+  }
+
+  .contact-details {
+    width: 100%;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    margin-bottom: 1rem;
+  }
+
+  .name, .degree {
+    text-align: center;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+
+  .resources-content {
+    margin-top: 10rem;
+    margin-bottom: 35rem;
+  }
+}
+
+@media (max-width: 620px) {
+
+  header {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 14px 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center; /* Centers the navigation container */
+    width: 100%; /* Ensures nav takes full width */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row; /* Keeps menu items in a row */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    justify-content: center; /* Centers items horizontally */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes default list bullets */
+    
+  }
+
+  li {
+    font-size: small; /* Reduces font size for smaller screens */
+    margin: 0 5px; /* Adds horizontal spacing between items */
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer is pushed down on mobile */
+    z-index: 0;
+  }
+  main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .column {
+    flex-direction: column-reverse ;
+  }
+
+  .content {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .cover {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 3rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .right-column {
+    padding-left: 0;
+  }
+
+  .title {
+    margin-top: 0rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .paragraph-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .contact-section {
+    margin-bottom: 30rem;
+    padding: 50px;
+  }
+
+  .contact-details {
+    width: 100%;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    margin-bottom: 1rem;
+  }
+
+  .name, .degree {
+    text-align: center;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+
+  .imgdisplay {
+    max-width: 100%;
+    height: auto;
+  }
+  .resources-content {
+    margin-top: 10rem;
+    margin-bottom: 35rem;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .column {
+    flex-direction: column-reverse ;
+  }
+
+  .content {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .cover {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 3rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .right-column {
+    padding-left: 0;
+  }
+
+  .title {
+    margin-top: 0rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .paragraph-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .contact-section {
+    margin-bottom: 30rem;
+    padding: 50px;
+  }
+
+  .contact-details {
+    width: 100%;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    margin-bottom: 1rem;
+  }
+
+  .name, .degree {
+    text-align: center;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+
+  .imgdisplay {
+    max-width: 100%;
+    height: auto;
+  }
+  .resources-content {
+    margin-top: 10rem;
+    margin-bottom: 35rem;
+  }
+}
+
+@media (max-width: 710px) {
+
+  .back-button {
+    margin-top: 2rem;
+    left: 0;
+    z-index: 1000;
+    font-family: Candara, sans-serif; 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fbbf24;
+    font-weight: bold;
+    padding:25px;
+    letter-spacing: 3px;
+    background: none;
+    text-decoration: none;
+  }
+
+  .description {
+    margin: 30px
+  }
+
+  .imgdisplay {
+    max-width: 100%;
+    height: auto;
+    margin: 30px;
+  }
+
+}
+
+@media (max-width: 875px) {
+
+  .description {
+    margin: 30px
+  }
+
+  .imgdisplay {
+    max-width: 100%;
+    height: auto;
+    margin: 30px;
+  }
+
+
 }
