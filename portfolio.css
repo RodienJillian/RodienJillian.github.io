@@ -598,8 +598,17 @@ div.contact-details{
   }
 
   .social-icons a img, .contact-section .icon img {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  div.social-icons {
+    padding:0;
+    margin:5px;
+  }
+
+  p{
+    margin:0;
   }
 
   span.text{
