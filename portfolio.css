@@ -528,6 +528,10 @@ div.contact-details{
     font-size:15px !important;
   }
 
+  p.description {
+    font-size: 18px !important;
+  }
+
   .social-icons a img, .contact-section .icon img {
     width: 20px;
     height: 20px;
@@ -558,6 +562,18 @@ div.contact-details{
 
   span.project-name {
     font-size: 1rem !important;
+  }
+
+  h1.project-title {
+    font-size:25px;
+  }
+
+  h2.project-title {
+    font-size:20px;
+  }
+
+  p.description {
+    font-size: 15px !important;
   }
 
   h1.name {
@@ -597,11 +613,7 @@ div.contact-details{
     padding: 0 !important; 
   }
 
-  .social-icons a img, .contact-section .icon img {
-    width: 15px;
-    height: 15px;
-  }
-
+  
   div.social-icons {
     padding:0;
     margin:5px;
