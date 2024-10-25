@@ -2,6 +2,8 @@
 
 Welcome to my portfolio website! This repository contains the source code for my personal portfolio, showcasing my projects, skills, and background.
 
+You can visit the link here: [My Portfolio](https://rodienjillian.github.io/)
+
 ## Introduction
 
 This is my personal portfolio website where I present my work, skills, and experience. It is designed to provide a professional overview of my capabilities and projects. Feel free to explore and contact me if you have any questions or opportunities.
