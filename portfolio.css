@@ -277,11 +277,12 @@ footer {
 .paragraph-container {
   display: flex;
   text-align: left;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin: 20px auto;
   line-height: 1.5;
-  font-family: Candara, sans-serif; 
+  font-family: Candara, sans-serif;
   color: #fbbf24;
+  max-width: 70%;
+  align-self: center;
 }
 
 /* Contact Section */
@@ -522,6 +523,8 @@ div.contact-details{
 
   p.paragraph-container{
     font-size: 15px !important;
+    margin: 20px auto;
+    
   }
 
   span.text{
