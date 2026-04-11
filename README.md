@@ -11,7 +11,7 @@ This is my personal portfolio website where I present my work, skills, and exper
 ## Features
 
 - **Home Page:** Introduction and overview of skills, projects and myself.
-- **Projects Page:** Tab showcasing of key projects and description.
 - **About Page:** Information about my background and experience.
+- **Skill Page:** List of skills and expertise.
+- **Projects Page:** Tab showcasing of key projects and description.
 - **Contact Page:** Contact details for reaching out.
-- **Resorces Page:** Source of the projects showed.
