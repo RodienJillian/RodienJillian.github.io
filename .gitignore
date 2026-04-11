@@ -1,33 +1,35 @@
 # Dependencies
-node_modules/
+node_modules
 
-# Build output
-dist/
-build/
+# Build
+dist
+dist-ssr
+*.local
 
-# Environment variables
+# Environment
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
 # Logs
+logs
+*.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS files
+# Editor / OS
 .DS_Store
 Thumbs.db
+.idea
+.vscode
 
-# IDE files
-.vscode/
-.idea/
-
-# Vite / React cache
-.vite/
-
-# Coverage reports
-coverage/
-
-# TypeScript
+# Tooling caches
+.cache
+.turbo
 *.tsbuildinfo
+.eslintcache
+
+# Test / coverage
+coverage
