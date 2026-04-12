@@ -66,10 +66,10 @@ const Contact = () => {
           <div className="text-center mb-12 space-y-3">
             <p className="text-primary text-sm font-semibold tracking-wide">Get In Touch</p>
             <h2 className="text-4xl md:text-5xl font-semibold">
-              Let's Work Together
+              Let's Connect!
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear about it.
+              Have something on your mind? Send me a message! I’d love to hear from you.
             </p>
           </div>
 
@@ -119,7 +119,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-muted/50 border border-border rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all resize-none text-foreground"
-                  placeholder="Tell me about your project..."
+                  placeholder="Share your thoughts, questions, or concerns…"
                   required
                 />
               </div>
