@@ -12,7 +12,7 @@ const Projects = () => {
     },
     {
       title: 'The New York Times Clone',
-      description: 'AnalytThe New York Times Clone is a web application that mimics the layout and functionality of the New York Times website. It fetches news articles using the New York Times API, providing users with access to the latest news across various categories such as Arts, Science, US, and World.ics platform for tracking social media performance across multiple channels with AI-powered insights.',
+      description: 'A web application that mimics the layout and functionality of the New York Times website. It fetches news articles using the New York Times API, providing users with access to the latest news across various categories such as Arts, Science, US, and World.ics platform for tracking social media performance across multiple channels with AI-powered insights.',
       tags: ['Javascript', 'Vanta.js', 'New York Times API', 'UI Design'],
       image: 'https://res.cloudinary.com/dakq2u8n0/image/upload/v1775834901/Screenshot_2026-04-10_232739_rm1rzi.png',
 
