@@ -51,7 +51,7 @@ const About = () => {
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
               <a
-                href="https://drive.google.com/file/d/1A-EJPKN69bhPmq9uVu2pMUKY2-fxV4pv/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YLRmBgFdqqjlWMA2TDwHXsEJGfqUxc1C/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-dark-red text-white font-medium rounded-full shadow-red-glow hover:shadow-medium transition-all transform hover:-translate-y-1 text-center"
