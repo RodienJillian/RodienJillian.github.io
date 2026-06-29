@@ -71,6 +71,14 @@ const Projects = () => {
 
       githubLink: 'https://github.com/Mikeru02/smile/tree/main'
     },
+    {
+      title: 'Marketing Visuals',
+      description: 'A collection of promotional graphics, social media posts, posters, banners, and marketing materials created for academic projects, internship tasks, and branding activities. Focused on visual communication, layout design, and creating engaging content for digital and print platforms.',
+      tags: ['Graphic Design', 'Canva', 'Marketing'],
+      image: 'https://res.cloudinary.com/dakq2u8n0/image/upload/v1782702769/CS_EXHIBIT_2026_q75gdf.jpg',
+
+      liveLink: 'https://drive.google.com/drive/folders/1AeWsfSRZQoWN55OqR_OJSYlCUzJbZ7v9?usp=drive_link',
+    },
   ];
 
   return (
